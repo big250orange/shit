@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs') %>
+  </head>
+  <body>
+    <%- include('./partials/navbar.ejs') %>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form method="post" class="container-sm">
+      <div id="alertmessage"></div>
+      <input
+        class="form-control mb-3"
+        type="text"
+        name="name"
+        placeholder="Enter name"
+        id="name"
+      />
+      <input
+        class="form-control mb-3"
+        type="text"
+        name="message"
+        placeholder="Enter message"
+        id="message"
+      />
+      <input
+        class="form-control mb-3"
+        type="text"
+        name="email"
+        placeholder="Enter email"
+        id="email"
+      />
+      <button class="btn btn-primary w-100" type="submit" id="submit">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
