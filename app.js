@@ -36,6 +36,9 @@ app.post("/contact", (req, res) => {
     email: req.body.email,
     message: req.body.message,
   };
+  
+  // Res.send
+  // res.send(data);
   res.render("contact", data);
 });
 
